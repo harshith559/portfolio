@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Koushik Mutthunuri | Photographer, Cinematographer & Editor</title>
+  <meta name="description" content="Portfolio of Koushik Mutthunuri - photographer, cinematographer, video editor and short film maker." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">K<span>M</span></a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Photography</a></li>
+        <li><a href="#videos">Videos</a></li>
+        <li><a href="#films">Short Films</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="eyebrow">Photographer &nbsp;•&nbsp; Cinematographer &nbsp;•&nbsp; Editor</p>
+      <h1>Koushik <em>Mutthunuri</em></h1>
+      <p class="hero-sub">I capture light, emotion and motion, and turn them into stories worth watching.</p>
+      <div class="hero-buttons">
+        <a href="#work" class="btn btn-primary">View My Work</a>
+        <a href="#films" class="btn btn-outline">Watch Short Films</a>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down"><span></span></a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-image reveal">
+        <img id="aboutImg" alt="Koushik Mutthunuri" />
+        <div class="about-badge"><strong id="aboutYears">5+</strong><span>Years Behind<br />the Lens</span></div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-tag">About Me</p>
+        <h2 id="aboutHeading"></h2>
+        <div id="aboutBio"></div>
+        <ul class="skills" id="skillsList"></ul>
+        <div class="stats">
+          <div><strong id="statPhotos" data-count="0">0</strong><span>Photo Projects</span></div>
+          <div><strong id="statVideos" data-count="0">0</strong><span>Videos Edited</span></div>
+          <div><strong id="statFilms" data-count="0">0</strong><span>Short Films</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PHOTOGRAPHY ================= -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Portfolio</p>
+        <h2>Selected Photography</h2>
+        <p class="section-desc">A look at my frames: portraits, landscapes, street and creative experiments.</p>
+      </div>
+
+      <div class="filters reveal" id="filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="portrait">Portrait</button>
+        <button class="filter" data-filter="landscape">Landscape</button>
+        <button class="filter" data-filter="street">Street</button>
+        <button class="filter" data-filter="creative">Creative</button>
+      </div>
+
+      <div class="gallery" id="gallery"></div>
+      <p class="empty-note" id="galleryEmpty" hidden>No photos yet.</p>
+    </div>
+  </section>
+
+  <!-- ================= VIDEOS ================= -->
+  <section class="section videos" id="videos">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Cinematography &amp; Editing</p>
+        <h2>Videos</h2>
+        <p class="section-desc">Showreels, edits, commercials and cinematic work.</p>
+      </div>
+      <div class="film-grid" id="videoGrid"></div>
+      <p class="empty-note" id="videoEmpty" hidden>No videos yet.</p>
+    </div>
+  </section>
+
+  <!-- ================= SHORT FILMS ================= -->
+  <section class="section films" id="films">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">Cinema</p>
+        <h2>Short Films</h2>
+        <p class="section-desc">Original short films, written, shot and edited with passion.</p>
+      </div>
+      <div class="film-grid" id="filmGrid"></div>
+      <p class="empty-note" id="filmEmpty" hidden>No short films yet.</p>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="section-tag">What I Do</p>
+        <h2>Services</h2>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <div class="icon">📷</div>
+          <h3>Photography</h3>
+          <p>Portraits, weddings, events, product and travel photography with a cinematic eye.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">🎥</div>
+          <h3>Cinematography</h3>
+          <p>Camera, lighting and composition for short films, music videos, ads and brand stories.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">✂️</div>
+          <h3>Video Editing</h3>
+          <p>Story-driven editing, pacing, transitions, sound design and professional colour grading.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="icon">🎬</div>
+          <h3>Short Film Production</h3>
+          <p>From concept and script to shoot and final delivery, complete short film creation.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <p class="section-tag">Contact</p>
+        <h2>Let's create something unforgettable.</h2>
+        <p>Have a project, collaboration or shoot in mind? Send me a message and I'll get back to you soon.</p>
+        <ul class="contact-list">
+          <li><span>Email</span><a id="contactEmail" href="#"></a></li>
+          <li><span>Phone</span><a id="contactPhone" href="#"></a></li>
+          <li><span>Location</span><b id="contactLoc"></b></li>
+        </ul>
+        <div class="socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener">Instagram</a>
+          <a href="https://youtube.com/" target="_blank" rel="noopener">YouTube</a>
+          <a href="https://vimeo.com/" target="_blank" rel="noopener">Vimeo</a>
+          <a href="https://behance.net/" target="_blank" rel="noopener">Behance</a>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <label>Your Name
+          <input type="text" id="cName" placeholder="Full name" required />
+        </label>
+        <label>Your Email
+          <input type="email" id="cEmail" placeholder="you@email.com" required />
+        </label>
+        <label>Service Needed
+          <select id="cService">
+            <option>Photography</option>
+            <option>Cinematography</option>
+            <option>Video Editing</option>
+            <option>Short Film</option>
+            <option>Other</option>
+          </select>
+        </label>
+        <label>Message
+          <textarea id="cMessage" rows="5" placeholder="Tell me about your project..." required></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary">Send Message</button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p>© <span id="year"></span> Koushik Mutthunuri. All rights reserved. All photos, videos and films are the original work of the owner.</p>
+    <div class="footer-links">
+      <a href="#" id="adminLink" class="admin-link">🔒 Admin</a>
+      <a href="#home" class="to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ================= ADMIN BAR (visible only after login) ================= -->
+  <div class="admin-bar" id="adminBar">
+    <strong>Admin Mode</strong>
+    <button data-admin="photo">+ Photo</button>
+    <button data-admin="video">+ Video</button>
+    <button data-admin="film">+ Short Film</button>
+    <button data-admin="about">✎ About &amp; Contact</button>
+    <button data-admin="samples" id="samplesBtn">Hide sample content</button>
+    <button data-admin="logout" class="danger">Logout</button>
+  </div>
+
+  <!-- ================= GENERIC MODAL (login + admin forms) ================= -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-box" id="modalBox"></div>
+  </div>
+
+  <!-- ================= LIGHTBOX (photos) ================= -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous">&#10094;</button>
+    <figure>
+      <img id="lbImg" alt="" />
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Next">&#10095;</button>
+  </div>
+
+  <!-- ================= VIDEO PLAYER ================= -->
+  <div class="video-modal" id="videoModal" aria-hidden="true">
+    <button class="lb-close" id="vmClose" aria-label="Close">&times;</button>
+    <div class="video-wrap" id="videoWrap"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
